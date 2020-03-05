@@ -1,64 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>QRCODE</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Fontawesome CSS -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
-  </head>
-  <body>
-    <!-- header -->
-    <!-- Main Start -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <!-- Name start -->
-                <div class="name">
-                    <p>Name: </p>
-                    <p>Profession: </p>
-                    <p>Website Link:</p>
-                    <p>VCard:</p>
-                </div>
-                <!-- Name end -->
-                <!-- Social-1 start -->
-                <div class="social-1">
-                    <p><a href=""><i class="fab fa-facebook" aria-hidden="true"></i></a></p>
-                    <p><a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a></p>
-                    <p><a href=""><i class="fab fa-google-plus-g"></i></a></p>
-                    <p><a href=""><i class="fab fa-linkedin"></i></a></p>
-                </div>
-                <!-- Social-1 end -->
-                <!-- Social-2 start -->
-                <div class="social-2">
-                    <p><a href=""><i class="fas fa-location-arrow"></i></a></p>
-                    <p><a href=""><i class="fas fa-sms"></i></a></p>
-                    <p><a href=""></a><i class="far fa-envelope"></i></p>
-                    <p><a href=""><i class="fas fa-phone-square"></i></a></p>
-                </div>
-                <!-- Social-2 end -->
-                <!-- activities start -->
-                <div class="activities">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container{
+            background-color: aqua;
+            width: 100vw;
+            height: 98vh;
+            margin-top: auto;
+            margin-bottom: auto;
+            text-align: center;
 
-                </div>
-                <!-- activities end -->
-            </div>
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 15% 20% 20% 45%;
+            grid-gap: 4px;
+        }
+        .name{
+            background-color: burlywood;
+            grid-row: 1/2;
+            grid-column: 1/4;
+            color: #fff;
+            font-size: large;
+            font-weight: 800;
+        }
+        p > a {
+            text-decoration: none;
+        }
+        .card{
+            background-color: cadetblue;
+            grid-column: 4/-1;
+            color: #000;
+            font-size: smaller;
+        }
+        p > #vcard{
+            color: #fff;
+            font-size: x-large;            
+        }
+        .social-1{
+            background-color: chartreuse;
+            align-items: center;
+        }
+        .social-2{
+            background-color: chocolate;
+        }
+        .social-3{
+            background-color: coral;
+        }
+        .social-4{
+            background-color: cornflowerblue;
+        }
+        .social-5{
+            background-color: darkgoldenrod;
+        }
+        .social-6{
+            background-color: darkkhaki;
+        }
+        .social-7{
+            background-color: darkmagenta;
+        }
+        .social-8{
+            background-color: darkolivegreen;
+        }
+        .icons{
+            color: #fff;
+            font-size: 32px;
+        }
+        .carousel-img{
+            background-color: darkcyan;
+            grid-column: 1/-1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items name">
+            <p>S.Ghouse Mohiddin</p>
+            <p>Web Developer</p>
+            <p><a href="">www.gmshaik.tech</a></p>
         </div>
+        <div class="items card">
+            <p><a href="Rahmath.vcf" id="vcard" download>save <i class="fas fa-address-card"></i></a></p>
+        </div>
+        <div class="items social-1">
+            <a href="" class="icons"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="items social-2">
+            <a href=""class="icons"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="items social-3">
+            <a href=""class="icons"><i class="fab fa-google-plus"></i></a>
+        </div>
+        <div class="items social-4">
+            <a href=""class="icons"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="items social-5">
+            <a href="https://goo.gl/maps/JGvPkJdaSsthiRUu8"class="icons"><i class="fas fa-location-arrow"></i></a>
+        </div>
+        <div class="items social-6">
+            <a href="sms:+96560674415?body=this is the text message to send"class="icons"><i class="fas fa-sms"></i></a>
+        </div>
+        <div class="items social-7">
+            <a href="mailto:gmshaik.kw@gmail.com" class="icons"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="items social-8">
+            <a href="tel:+96560674415"class="icons"><i class="fas fa-phone-square"></i></a>
+        </div>
+        <div class="items carousel-img">Image</div>
     </div>
-        
-        
-        <!-- Socail-2 -->
-        <!-- Activites -->
-    <!-- Main End -->
-    <!-- Footer -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
