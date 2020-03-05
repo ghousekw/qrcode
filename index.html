@@ -22,18 +22,21 @@
             grid-template-rows: 15% 20% 20% 45%;
             grid-gap: 4px;
         }
+
         .name{
             background-color: burlywood;
             grid-row: 1/2;
             grid-column: 1/4;
             color: #fff;
-            font-size: 16px;
+            font-size: small;
+            padding: 10px;
         }
         p > #website{
-            font-size: 14px;
+            font-size: 12px;
         }
         .name-heading{
             color: brown;
+            font-weight: bold;
         }
         
         .card{
@@ -80,17 +83,12 @@
         .icons{
             color: #fff;
             font-size: 32px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 3em;
-            text-decoration: none;
         }
-        /* .items{
+        .items{
             display: flex;
             align-items: center;
             justify-content: center;
-        } */
+        }
         .carousel-img{
             background-color: darkcyan;
             grid-column: 1/-1;
@@ -99,7 +97,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="items name">
+        <div class="name">
             <p><span class="name-heading">Name: </span>S.Ghouse Mohiddin</p>
             <p><span class="name-heading">Profession: </span> Web Developer</p>
             <p><span class="name-heading">website: </span> <a href="" id=website>www.gmshaik.tech</a></p>
