@@ -1,0 +1,17 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Rahamathulla;Mohammed;;Mr.
+FN:Mr. Mohammed Rahamathulla
+ORG:Safa Charitable Society Humanitarian;Information and communications technology
+TITLE:Head of ICT
+TEL;WORK;VOICE:96522233322
+TEL;CELL;VOICE:96597867236
+ADR;WORK;PREF:;;;https://goo.gl/maps/vkHyaNc6Nx1HhrZo11;8XMQ+5J Rawda;;Kuwait
+LABEL;WORK;PREF;ENCODING=QUOTED-PRINTABLE:https://goo.gl/maps/vkHyaNc6Nx1HhrZo11  8XMQ+5J Rawda=0D=0A=
+Kuwait
+X-MS-OL-DEFAULT-POSTAL-ADDRESS:2
+EMAIL;PREF;INTERNET:m.hajee@alsafakw.org
+EMAIL;INTERNET:icthod@alsafakw.org
+X-MS-OL-DESIGN;CHARSET=utf-8:<card xmlns="http://schemas.microsoft.com/office/outlook/12/electronicbusinesscards" ver="1.0" layout="left" bgcolor="ffffff"><img xmlns="" align="fit" area="16" use="cardpicture"/><fld xmlns="" prop="name" align="left" dir="ltr" style="b" color="000000" size="10"/><fld xmlns="" prop="org" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="title" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="dept" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="telwork" align="left" dir="ltr" color="d48d2a" size="8"><label align="right" color="626262">Work</label></fld><fld xmlns="" prop="telcell" align="left" dir="ltr" color="d48d2a" size="8"><label align="right" color="626262">Mobile</label></fld><fld xmlns="" prop="email" align="left" dir="ltr" color="d48d2a" size="8"/><fld xmlns="" prop="email2" align="left" dir="ltr" color="d48d2a" size="8"/><fld xmlns="" prop="addrwork" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="webwork" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/></card>
+REV:20200305T122116Z
+END:VCARD
