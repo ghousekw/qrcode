@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo</title>
+    <title>QRCode</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
     <style>
         @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
@@ -16,9 +16,6 @@
             background-color: aqua;
             width: 100vw;
             height: 98vh;
-            margin-top: auto;
-            margin-bottom: auto;
-            text-align: center;
 
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -30,20 +27,29 @@
             grid-row: 1/2;
             grid-column: 1/4;
             color: #fff;
-            font-size: large;
-            font-weight: 800;
+            font-size: 16px;
         }
-        p > a {
-            text-decoration: none;
+        p > #website{
+            font-size: 14px;
         }
+        .name-heading{
+            color: brown;
+        }
+        
         .card{
             background-color: cadetblue;
             grid-column: 4/-1;
-            color: #000;
             font-size: smaller;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card p {
+            color: #fff;
         }
         p > #vcard{
             color: #fff;
+            text-decoration: none;
             font-size: x-large;            
         }
         .social-1{
@@ -74,7 +80,17 @@
         .icons{
             color: #fff;
             font-size: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3em;
+            text-decoration: none;
         }
+        /* .items{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } */
         .carousel-img{
             background-color: darkcyan;
             grid-column: 1/-1;
@@ -84,12 +100,13 @@
 <body>
     <div class="container">
         <div class="items name">
-            <p>S.Ghouse Mohiddin</p>
-            <p>Web Developer</p>
-            <p><a href="">www.gmshaik.tech</a></p>
+            <p><span class="name-heading">Name: </span>S.Ghouse Mohiddin</p>
+            <p><span class="name-heading">Profession: </span> Web Developer</p>
+            <p><span class="name-heading">website: </span> <a href="" id=website>www.gmshaik.tech</a></p>
         </div>
         <div class="items card">
-            <p><a href="Rahmath.vcf" id="vcard" download>save <i class="fas fa-address-card"></i></a></p>
+            <p><a href="Rahmath.vcf" id="vcard" download><i class="fas fa-address-card"></i></a></p>
+            <p>Save</p>
         </div>
         <div class="items social-1">
             <a href="" class="icons"><i class="fab fa-facebook-f"></i></a>
